@@ -24,4 +24,5 @@ def send_qlist(message):
 def send_answer(message):
     bot.send_message(message.chat.id, processing.question_processing(message.text))
 
-bot.infinity_polling()
+if __name__ == "__main__":
+    bot.infinity_polling()
